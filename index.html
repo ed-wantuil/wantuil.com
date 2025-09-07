@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.png" type="image/png" />
+    <title>Ed Wantuil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #2C3E50;
+            color: #D6DBDF;
+        }
+        .avatar-shadow {
+            box-shadow: 0 0 25px rgba(255, 107, 53, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .avatar-shadow:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(255, 107, 53, 0.7);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen px-6">
+
+<!-- Container Principal -->
+<main class="flex flex-col items-center text-center space-y-10 w-full max-w-2xl">
+
+    <!-- Foto de Perfil -->
+    <img src="profile.jpeg" alt="Foto de Ed Wantuil"
+         class="w-36 h-36 rounded-full border-4 border-[#FF6B35] avatar-shadow object-cover" />
+
+    <!-- Nome -->
+    <h1 class="text-5xl md:text-6xl font-extrabold text-white">
+        Ed Wantuil
+    </h1>
+
+    <!-- Subtítulo -->
+    <p class="text-xl md:text-2xl font-medium text-gray-300">
+        Criando. Compartilhando. Evoluindo.
+    </p>
+
+    <!-- Sobre mim -->
+    <section class="max-w-xl text-lg text-gray-300 leading-relaxed">
+        <p>
+            Meu objetivo é compartilhar conhecimento,
+            criar soluções e ajudar outras pessoas a evoluírem na carreira de tecnologia.
+        </p>
+    </section>
+
+    <!-- Links principais -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4 w-full max-w-xl">
+
+        <!-- Função para gerar botões com menos repetição -->
+        <a href="https://www.linkedin.com/in/ed-wantuil/" target="_blank"
+           class="flex items-center justify-center gap-3 py-4 text-lg rounded-xl font-semibold shadow-md
+                  bg-[#FF6B35] text-white hover:bg-[#ff814f] focus:ring-4 focus:ring-[#FF6B35]/40 transition">
+            <i data-lucide="linkedin" aria-hidden="true"></i> LinkedIn
+        </a>
+
+        <a href="https://github.com/ed-wantuil" target="_blank"
+           class="flex items-center justify-center gap-3 py-4 text-lg rounded-xl font-semibold shadow-md
+                  bg-[#FF6B35] text-white hover:bg-[#ff814f] focus:ring-4 focus:ring-[#FF6B35]/40 transition">
+            <i data-lucide="github" aria-hidden="true"></i> GitHub
+        </a>
+
+        <a href="https://dev.to/ed-wantuil" target="_blank"
+           class="flex items-center justify-center gap-3 py-4 text-lg rounded-xl font-semibold shadow-md
+                  bg-[#FF6B35] text-white hover:bg-[#ff814f] focus:ring-4 focus:ring-[#FF6B35]/40 transition">
+            <i data-lucide="file-text" aria-hidden="true"></i> Artigos
+        </a>
+
+        <a href="https://www.youtube.com/@ed-wantuil" target="_blank"
+           class="flex items-center justify-center gap-3 py-4 text-lg rounded-xl font-semibold shadow-md
+                  bg-[#FF6B35] text-white hover:bg-[#ff814f] focus:ring-4 focus:ring-[#FF6B35]/40 transition">
+            <i data-lucide="youtube" aria-hidden="true"></i> YouTube
+        </a>
+
+    </div>
+
+    <!-- Contato -->
+    <div class="flex flex-col items-center gap-3 mt-8 text-lg">
+        <a href="https://wa.me/5534992142011"
+           class="flex items-center gap-2 hover:text-[#FF6B35] transition">
+            <i data-lucide="phone" aria-hidden="true"></i> (34) 99214-2011
+        </a>
+        <a href="mailto:ed@wantuil.com"
+           class="flex items-center gap-2 hover:text-[#FF6B35] transition">
+            <i data-lucide="mail" aria-hidden="true"></i> ed@wantuil.com
+        </a>
+    </div>
+</main>
+
+<!-- Inicializar Ícones -->
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>
